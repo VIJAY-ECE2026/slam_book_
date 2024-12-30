@@ -1,0 +1,109 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+   background-image: url("jGlzr.png");
+   background-repeat: no-repeat; /* Prevent the image from repeating */
+   background-position: center center; /* Center the image */
+   background-size: cover;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Slam Container */
+  #slam-container {
+    background-color: rgba(250, 227, 227, 0.315); /* Semi-transparent box */
+    width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  
+  /* Title */
+  #slam-container h2 {
+    text-align: center;
+    color: #444;
+    margin-bottom: 20px;
+  }
+  
+  /* Form */
+  #slam-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  /* Form Group */
+  .form-group {
+    display: flex;
+    align-items: center; /* Align label and input vertically */
+    justify-content: space-between; /* Spread label and input */
+  }
+  
+  /* Label */
+  label {
+    flex: 1; /* Allow label to take up more space */
+    font-weight: bold;
+    color: #555;
+    text-align: right; /* Align label text to the right */
+    margin-right: 10px; /* Add spacing between label and input */
+  }
+  
+  /* Input Fields */
+  input[type="text"],
+  select ,
+  input[type="date"]{
+    flex: 2; /* Allow input box to take up more space */
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Radio Button Group */
+  .form-group input[type="radio"] {
+    flex: 0; /* Keep radio buttons smaller */
+    margin-left: 10px;
+  }
+  
+  /* Button */
+  button {
+    padding: 10px 15px;
+    font-size: 16px;
+    color: #fff;
+    background: #ff7e5f;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    width: 100%; /* Full-width button */
+  }
+  
+  button:hover {
+    background: #feb47b;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 480px) {
+    #slam-container {
+      width: 90%;
+      padding: 15px;
+    }
+    label {
+      text-align: left; /* Adjust alignment for small screens */
+    }
+  }
+  legend {
+    font-size: 20px;
+    font-weight: bold;
+    color: #444;
+    text-align: center;
+    padding: 0 10px;
+  }
+  
